@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       {
         path: "auth", //Relative to parent
         element: <AuthenticationPage />,
-        action: authenticationAction,
+        action: authenticationAction, //calls it if data (form) is submitted in current url
       },
       {
         path: "newsletter", //Relative to parent

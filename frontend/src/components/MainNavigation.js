@@ -4,7 +4,7 @@ import classes from "./MainNavigation.module.css";
 import NewsletterSignup from "./NewsletterSignup";
 
 function MainNavigation() {
-  const token = useRouteLoaderData("root"); //loader data on specified route?
+  const token = useRouteLoaderData("root"); //loader data on specified route with id?
 
   return (
     <header className={classes.header}>

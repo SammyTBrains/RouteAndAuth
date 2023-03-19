@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 
 import classes from "./MainNavigation.module.css";
 import NewsletterSignup from "./NewsletterSignup";
@@ -48,6 +48,14 @@ function MainNavigation() {
             >
               Newsletter
             </NavLink>
+          </li>
+          <li>
+            <Form
+              action="/logout" //cause we are never on path /logout when logout clicked, so it goes to path /logout and calls logoutAction on submit
+              method="post"
+            >
+              <button>Logout</button>
+            </Form>
           </li>
         </ul>
       </nav>

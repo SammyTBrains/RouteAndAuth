@@ -12,7 +12,7 @@ import EventsList from "../components/EventsList";
 import { getAuthToken } from "../util/auth";
 
 function EventDetailPage() {
-  const { event, events } = useRouteLoaderData("event-detail");
+  const { event, events } = useRouteLoaderData("event-detail"); //loader data on specified route?
 
   return (
     <>
